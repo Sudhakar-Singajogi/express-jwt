@@ -8,7 +8,11 @@ const {
     addFranchiseValidation
 } = require("../validations/franchise/registration.validation");
 
-
+/**
+ * @swagger
+ *  /api/franchise/login:
+ *   post:
+ */
 
 router.post("/login", franchise.loginFranchise);
 router.post("/", checkToken, addFranchiseValidation, franchise.createFranchise);

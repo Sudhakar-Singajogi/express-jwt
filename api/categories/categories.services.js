@@ -45,6 +45,7 @@ module.exports = {
             ],
             (err, result, fields) => {
                 if (err) {
+                    console.log(err)
                     return callBack(err);
                 } else {
                     return callBack(null, result);

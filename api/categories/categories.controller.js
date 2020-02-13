@@ -2,6 +2,7 @@ const {
     getcategoriesforproducts,
     createCategory
 } = require("./categories.services");
+const logger = require("../../configuration/logger");
 
 module.exports = {
     productCategories: (req, res) => {
